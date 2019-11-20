@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1dff100d1923c77e1f1849e2158bb086",
+    "revision": "39c60085b547f3713dd21b966c96934a",
     "url": "/f-auto-course-project/index.html"
   },
   {
-    "revision": "cd1704802e8ccb19fb61",
-    "url": "/f-auto-course-project/static/css/main.b100e6da.chunk.css"
+    "revision": "155c43e1ef04cb39f216",
+    "url": "/f-auto-course-project/static/css/main.5e4e9510.chunk.css"
   },
   {
     "revision": "dbe6573b22cf995ec1cb",
     "url": "/f-auto-course-project/static/js/2.15b7f8a7.chunk.js"
   },
   {
-    "revision": "cd1704802e8ccb19fb61",
+    "revision": "155c43e1ef04cb39f216",
     "url": "/f-auto-course-project/static/js/main.e35a9db1.chunk.js"
   },
   {
