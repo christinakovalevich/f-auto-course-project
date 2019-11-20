@@ -1,0 +1,2 @@
+(this["webpackJsonpf-auto-course-project"]=this["webpackJsonpf-auto-course-project"]||[]).push([[0],[,,,function(e,t,n){e.exports=n(10)},,,,,function(e,t,n){},function(e,t,n){},function(e,t,n){"use strict";n.r(t);var o=n(0),c=n.n(o),r=n(2),u=n.n(r);n(8),n(9);var a=function(){return c.a.createElement("div",{className:"App"})};u.a.render(c.a.createElement(a,null),document.getElementById("root"))}],[[3,1,2]]]);
+//# sourceMappingURL=main.ca620ef4.chunk.js.map
