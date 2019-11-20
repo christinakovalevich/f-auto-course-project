@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/f-auto-course-project/static/css/main.b100e6da.chunk.css",
+    "main.js": "/f-auto-course-project/static/js/main.e35a9db1.chunk.js",
+    "main.js.map": "/f-auto-course-project/static/js/main.e35a9db1.chunk.js.map",
+    "runtime-main.js": "/f-auto-course-project/static/js/runtime-main.c372d692.js",
+    "runtime-main.js.map": "/f-auto-course-project/static/js/runtime-main.c372d692.js.map",
+    "static/js/2.15b7f8a7.chunk.js": "/f-auto-course-project/static/js/2.15b7f8a7.chunk.js",
+    "static/js/2.15b7f8a7.chunk.js.map": "/f-auto-course-project/static/js/2.15b7f8a7.chunk.js.map",
+    "index.html": "/f-auto-course-project/index.html",
+    "precache-manifest.1e10d22aa7bedddd777f1ccf39f64907.js": "/f-auto-course-project/precache-manifest.1e10d22aa7bedddd777f1ccf39f64907.js",
+    "service-worker.js": "/f-auto-course-project/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/f-auto-course-project/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/f-auto-course-project/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c372d692.js",
+    "static/js/2.15b7f8a7.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.e35a9db1.chunk.js"
+  ]
+}
