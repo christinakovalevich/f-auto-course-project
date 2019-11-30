@@ -3,6 +3,10 @@
     --color-grey: #515151;
     --color-blue: #3700D4;
     --color-white: #FFFFFF;
+
+    --box-shadow:10px 10px 50px rgba(0, 0, 0, 0.29);
+
+    --transition-duration-half: .5s;
 }
 
 *{
@@ -16,8 +20,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+select {
+    transition-duration: var(--transition-duration-half) !important;
+}
+
+select {
+    cursor: pointer;
+}
+
+select:hover {
+    box-shadow: var(--box-shadow);
+}
+
 select:focus {
-    background-color: #fff;
+    background-color: var(--color-white);
     border-color: rgba(55, 0, 212, 0.5) !important;
     outline: 0 !important;
     box-shadow: 0 0 0 0.2rem rgba(55, 0, 212, 0.4) !important;
@@ -26,4 +42,8 @@ select:focus {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
 
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
 }

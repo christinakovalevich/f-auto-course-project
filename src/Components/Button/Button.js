@@ -12,7 +12,7 @@ const Button = (props) => {
     ) : (
         <button
             className="button"
-            onClick={() => onClick(this.event)}>{ label }
+            onClick={onClick}>{ label }
         </button>
     );
 
