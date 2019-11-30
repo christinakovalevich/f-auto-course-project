@@ -1,0 +1,27 @@
+.benefits-panel {
+    padding: 4.6rem 0;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.benefit-item {
+    margin: 2rem 0;
+}
+
+.benefit-item .title {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 1.4rem;
+}
+
+.benefit-item .text {
+    margin-top: 1.4rem;
+    color: var(--color-grey);
+    font-size: .875rem;
+    width: 80%;
+}
+
+.benefit-item img {
+    /*width: 100%;*/
+}
