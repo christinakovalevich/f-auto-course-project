@@ -28,21 +28,27 @@ const Header = (props) => {
 
             <div className="content">
                 <Container>
-                    <Row>
-                        <Col>
-                            <span className="title">Найти автозапчасти — легко!</span>
-                        </Col>
-                    </Row>
-                    <Row className="mt-2">
-                        <Col>
-                            <span className="text">Автозапчасти только от проверенных продавцов.</span>
-                        </Col>
-                    </Row>
-                    <Row className="mt-4">
-                        <Col sm={12} md={4} lg={3}>
-                            <Button label="Найти"/>
-                        </Col>
-                    </Row>
+                        <Row>
+                            <Col>
+                                <div className="title-container">
+                                <span className="title">Найти автозапчасти — легко!</span>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <div className="text-container">
+                                    <span className="text">Автозапчасти только от проверенных продавцов.</span>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col sm={12} md={4} lg={3}>
+                                <div className="button-container">
+                                    <Button label="Найти"/>
+                                </div>
+                            </Col>
+                        </Row>
                 </Container>
             </div>
 

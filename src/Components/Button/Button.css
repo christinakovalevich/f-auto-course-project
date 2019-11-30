@@ -1,4 +1,4 @@
-button {
+button.button {
     background-color: var(--color-blue);
     color: var(--color-white);
     font-weight: 500;
@@ -14,6 +14,6 @@ button {
     transition-duration: .5s;
 }
 
-button:hover {
+button.button:hover {
     box-shadow: var(--box-shadow);
 }

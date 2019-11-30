@@ -13,3 +13,8 @@ body {
 
     scroll-behavior: smooth;
 }
+
+.i-am-centered {
+    margin: auto;
+    max-width: 300px;
+}

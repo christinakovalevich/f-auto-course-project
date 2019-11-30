@@ -25,12 +25,11 @@ header .navbar {
     }
 
     header .content {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        margin-top: 20vh;
     }
 
     header .nav-link {
-        color: var(--color-white) !important;
+        /*color: var(--color-white) !important;*/
         font-size: 1rem;
         font-weight: normal;
         margin-left: 4rem;
@@ -51,19 +50,28 @@ header .navbar {
     }
 
     header .content {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 5vh;
     }
 
     header .nav-link {
-        color: var(--color-white) !important;
-        font-size: 1rem;
+        /*color: var(--color-white) !important;*/
+        font-size: 1.2rem;
         font-weight: normal;
-        margin-left: 2rem;
     }
+}
+
+header.title-container {
+}
+
+header .text-container {
+    margin-top: 1rem;
+}
+
+header .button-container {
+    margin-top: 2rem;
 }
 
 header span.text {
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }

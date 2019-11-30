@@ -7,7 +7,7 @@ const Button = (props) => {
     const {label, onClick} = props;
 
     return (
-        <button onClick={() => onClick(this.event)}>
+        <button className="button" onClick={() => onClick(this.event)}>
             {label}
         </button>
     )
