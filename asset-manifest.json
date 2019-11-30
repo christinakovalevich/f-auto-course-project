@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/f-auto-course-project/static/css/main.8d4b8a81.chunk.css",
-    "main.js": "/f-auto-course-project/static/js/main.23b586f1.chunk.js",
-    "main.js.map": "/f-auto-course-project/static/js/main.23b586f1.chunk.js.map",
+    "main.css": "/f-auto-course-project/static/css/main.9b193bcc.chunk.css",
+    "main.js": "/f-auto-course-project/static/js/main.e21b3b0d.chunk.js",
+    "main.js.map": "/f-auto-course-project/static/js/main.e21b3b0d.chunk.js.map",
     "runtime-main.js": "/f-auto-course-project/static/js/runtime-main.c372d692.js",
     "runtime-main.js.map": "/f-auto-course-project/static/js/runtime-main.c372d692.js.map",
     "static/css/2.17e5ed98.chunk.css": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css",
     "static/js/2.5ab3d995.chunk.js": "/f-auto-course-project/static/js/2.5ab3d995.chunk.js",
     "static/js/2.5ab3d995.chunk.js.map": "/f-auto-course-project/static/js/2.5ab3d995.chunk.js.map",
     "index.html": "/f-auto-course-project/index.html",
-    "precache-manifest.a88c4cd0d333f362bceb07627a3b2137.js": "/f-auto-course-project/precache-manifest.a88c4cd0d333f362bceb07627a3b2137.js",
+    "precache-manifest.7bf3079339b4cb17bdf8eb1650691aa2.js": "/f-auto-course-project/precache-manifest.7bf3079339b4cb17bdf8eb1650691aa2.js",
     "service-worker.js": "/f-auto-course-project/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.8d4b8a81.chunk.css.map": "/f-auto-course-project/static/css/main.8d4b8a81.chunk.css.map",
+    "static/css/main.9b193bcc.chunk.css.map": "/f-auto-course-project/static/css/main.9b193bcc.chunk.css.map",
     "static/media/benefit-item-1.svg": "/f-auto-course-project/static/media/benefit-item-1.ed53642f.svg",
     "static/media/benefit-item-2.svg": "/f-auto-course-project/static/media/benefit-item-2.c47a1faf.svg",
     "static/media/benefit-item-3.svg": "/f-auto-course-project/static/media/benefit-item-3.22bf89e6.svg",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.c372d692.js",
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.5ab3d995.chunk.js",
-    "static/css/main.8d4b8a81.chunk.css",
-    "static/js/main.23b586f1.chunk.js"
+    "static/css/main.9b193bcc.chunk.css",
+    "static/js/main.e21b3b0d.chunk.js"
   ]
 }
