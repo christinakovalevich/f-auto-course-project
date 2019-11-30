@@ -39,9 +39,8 @@ const ReviewPanel = (props) => {
                         </div>
                     </Col>
                 </Row>
-                <Row className="justify-content-lg-center">
-                    <Col sm={12} md={8} lg={8}>
-
+                <Row className="justify-content-center">
+                    <Col sm={12} md={true} lg={true}>
                         <Carousel
                             indicators={false}
                             nextIcon={nextIcon}
@@ -73,9 +72,15 @@ const UserReview = (props) => {
                 </div>
             </div>
             <div className="review-body">
-                <div className="text">
-                    {review.text}
-                </div>
+                <Container>
+                    <Row className="justify-content-center">
+                        <Col sm={12} md={8} lg={6}>
+                            <div className="text">
+                                {review.text}
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
                 <div className="review-date">
                     {review.date}
                 </div>
