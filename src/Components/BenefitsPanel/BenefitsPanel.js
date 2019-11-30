@@ -21,28 +21,28 @@ const BenefitsPanel = () => {
                 </Row>
 
                 <Row className="benefit-items-container">
-                    <Col sm={12} md={true} lg={true}>
+                    <Col sm={12} md={3} lg={3}>
                         <BenefitItem
                             img={benefitItemImg1}
                             title="Быстрый поиск и доставка"
                             text="Бахните текст про этот плюс на две или три строчки-строчечки"
                         />
                     </Col>
-                    <Col sm={12} md={true} lg={true}>
+                    <Col sm={12} md={3} lg={3}>
                         <BenefitItem
                             img={benefitItemImg2}
                             title="Тысячи довольных клиентов"
                             text="Бахните текст про этот плюс на две или три строчки-строчечки"
                         />
                     </Col>
-                    <Col sm={12} md={true} lg={true}>
+                    <Col sm={12} md={3} lg={3}>
                         <BenefitItem
                             img={benefitItemImg3}
                             title="Самые доступные цены"
                             text="Бахните текст про этот плюс на две или три строчки-строчечки"
                         />
                     </Col>
-                    <Col sm={12} md={true} lg={true}>
+                    <Col sm={12} md={3} lg={3}>
                         <BenefitItem
                             img={benefitItemImg4}
                             title="Гарантия на все запчасти"
@@ -62,7 +62,7 @@ const BenefitItem = (props) => {
     return (
         <div className="benefit-item">
             <div className="container">
-                <div className="row">
+                <div className="row no-gutters">
                     <div className="col">
                     </div>
                     <div className="col">
