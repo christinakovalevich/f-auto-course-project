@@ -1,6 +1,7 @@
 .search-panel {
     padding: 6rem 0;
     background-color: #F3F3F3;
+    color: var(--color-black);
 }
 
 .search-panel .title-container {

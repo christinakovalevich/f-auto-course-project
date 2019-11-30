@@ -5,6 +5,7 @@ import './App.css';
 import Header from "../Header";
 import SearchPanel from "../SearchPanel";
 import BenefitsPanel from "../BenefitsPanel";
+import ReviewPanel from "../ReviewsPanel";
 
 const app = {
     name: 'F-AUTO'
@@ -16,6 +17,7 @@ function App() {
             <Header app={app}/>
             <SearchPanel/>
             <BenefitsPanel/>
+            <ReviewPanel/>
         </div>
     );
 }

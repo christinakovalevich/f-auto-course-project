@@ -1,0 +1,27 @@
+.review-panel {
+    padding: 6rem 0;
+    background-color: #F3F3F3;
+    color: var(--color-black);
+}
+
+.review-panel .review {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.review-panel .review .user-info {
+    margin: 2rem 0;
+}
+
+.review-panel .user-info img {
+    margin-bottom: 1rem;
+}
+
+.review-panel .user-info span {
+
+}
+
+.review-panel .review .review-body .text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
