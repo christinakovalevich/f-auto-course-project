@@ -1,6 +1,9 @@
 import React from "react";
 import './ReviewPanel.css'
 import {Carousel, Col, Container, Row} from "react-bootstrap";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
+
 
 const ReviewPanel = (props) => {
 
@@ -16,6 +19,16 @@ const ReviewPanel = (props) => {
         </Carousel.Item>
     ));
 
+    const nextIcon = (
+        <span className="text-dark">
+            <FontAwesomeIcon icon={faChevronRight}/>
+        </span>);
+
+    const prevIcon = (
+        <span className="text-dark">
+            <FontAwesomeIcon icon={faChevronLeft}/>
+        </span>);
+
     return (
         <div className="review-panel">
             <Container>
@@ -27,14 +40,18 @@ const ReviewPanel = (props) => {
                     </Col>
                 </Row>
                 <Row className="justify-content-lg-center">
-                <Col sm={12} md={8} lg={8}>
+                    <Col sm={12} md={8} lg={8}>
 
-                    <Carousel>
-                        { carouselItems }
-                    </Carousel>
+                        <Carousel
+                            indicators={false}
+                            nextIcon={nextIcon}
+                            prevIcon={prevIcon}
+                        >
+                            {carouselItems}
+                        </Carousel>
 
-                </Col>
-            </Row>
+                    </Col>
+                </Row>
 
             </Container>
         </div>

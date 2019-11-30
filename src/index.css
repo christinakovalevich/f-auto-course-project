@@ -9,7 +9,7 @@
     --transition-duration-half: .5s;
 }
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -41,9 +41,9 @@ select:focus {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-
 }
 
 .cursor-pointer {
     cursor: pointer !important;
 }
+
