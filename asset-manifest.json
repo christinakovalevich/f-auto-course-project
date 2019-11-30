@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/f-auto-course-project/static/css/main.62a15d96.chunk.css",
-    "main.js": "/f-auto-course-project/static/js/main.2c372df1.chunk.js",
-    "main.js.map": "/f-auto-course-project/static/js/main.2c372df1.chunk.js.map",
+    "main.css": "/f-auto-course-project/static/css/main.4717f3c1.chunk.css",
+    "main.js": "/f-auto-course-project/static/js/main.f77f96af.chunk.js",
+    "main.js.map": "/f-auto-course-project/static/js/main.f77f96af.chunk.js.map",
     "runtime-main.js": "/f-auto-course-project/static/js/runtime-main.c372d692.js",
     "runtime-main.js.map": "/f-auto-course-project/static/js/runtime-main.c372d692.js.map",
     "static/css/2.17e5ed98.chunk.css": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.ada9185b.chunk.js": "/f-auto-course-project/static/js/2.ada9185b.chunk.js",
-    "static/js/2.ada9185b.chunk.js.map": "/f-auto-course-project/static/js/2.ada9185b.chunk.js.map",
+    "static/js/2.94f2237f.chunk.js": "/f-auto-course-project/static/js/2.94f2237f.chunk.js",
+    "static/js/2.94f2237f.chunk.js.map": "/f-auto-course-project/static/js/2.94f2237f.chunk.js.map",
     "index.html": "/f-auto-course-project/index.html",
-    "precache-manifest.376b46d672e790c989f03765317da8d5.js": "/f-auto-course-project/precache-manifest.376b46d672e790c989f03765317da8d5.js",
+    "precache-manifest.587fa402adfc34f51e58f7d079a9faae.js": "/f-auto-course-project/precache-manifest.587fa402adfc34f51e58f7d079a9faae.js",
     "service-worker.js": "/f-auto-course-project/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.62a15d96.chunk.css.map": "/f-auto-course-project/static/css/main.62a15d96.chunk.css.map",
+    "static/css/main.4717f3c1.chunk.css.map": "/f-auto-course-project/static/css/main.4717f3c1.chunk.css.map",
     "static/media/benefit-item-1.svg": "/f-auto-course-project/static/media/benefit-item-1.ed53642f.svg",
     "static/media/benefit-item-2.svg": "/f-auto-course-project/static/media/benefit-item-2.c47a1faf.svg",
     "static/media/benefit-item-3.svg": "/f-auto-course-project/static/media/benefit-item-3.22bf89e6.svg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.c372d692.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.ada9185b.chunk.js",
-    "static/css/main.62a15d96.chunk.css",
-    "static/js/main.2c372df1.chunk.js"
+    "static/js/2.94f2237f.chunk.js",
+    "static/css/main.4717f3c1.chunk.css",
+    "static/js/main.f77f96af.chunk.js"
   ]
 }

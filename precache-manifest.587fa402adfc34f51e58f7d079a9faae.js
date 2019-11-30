@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b0796dd9f6cc4572e9da8e525452dd75",
+    "revision": "b3d8c55c0c37f43464bd313549bec63b",
     "url": "/f-auto-course-project/index.html"
   },
   {
-    "revision": "54cfae97627dfc94a6c8",
+    "revision": "e9dd12d3c2c1ab6c80b1",
     "url": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "d2a193f029fd26b27abe",
-    "url": "/f-auto-course-project/static/css/main.62a15d96.chunk.css"
+    "revision": "acdf0010e594575a7fae",
+    "url": "/f-auto-course-project/static/css/main.4717f3c1.chunk.css"
   },
   {
-    "revision": "54cfae97627dfc94a6c8",
-    "url": "/f-auto-course-project/static/js/2.ada9185b.chunk.js"
+    "revision": "e9dd12d3c2c1ab6c80b1",
+    "url": "/f-auto-course-project/static/js/2.94f2237f.chunk.js"
   },
   {
-    "revision": "d2a193f029fd26b27abe",
-    "url": "/f-auto-course-project/static/js/main.2c372df1.chunk.js"
+    "revision": "acdf0010e594575a7fae",
+    "url": "/f-auto-course-project/static/js/main.f77f96af.chunk.js"
   },
   {
     "revision": "855441f2e542762e41c1",
