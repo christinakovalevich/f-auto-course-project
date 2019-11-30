@@ -1,0 +1,20 @@
+.search-panel {
+    padding: 4.6rem 0;
+    background-color: #F3F3F3;
+}
+
+.search-panel .title-container {
+    color: var(--color-black);
+}
+
+.search-panel .form-container {
+    padding: 2rem 0;
+}
+
+.search-panel .form-control {
+    font-weight: 500;
+    font-size: 1rem;
+
+    height: 50px;
+    width: 100%;
+}
