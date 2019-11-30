@@ -1,0 +1,69 @@
+header {
+    background-image: url("./assets/header-bg-img.png");
+    min-height: 100vh;
+    color: white;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .navbar {
+    padding: .5rem 0;
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 601px) {
+    header span.title {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    header .navbar-brand {
+        color: inherit;
+        font-weight: bold;
+        font-size: 2.25rem;
+    }
+
+    header .content {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    header .nav-link {
+        color: var(--color-white) !important;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-left: 4rem;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    header span.title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    header .navbar-brand {
+        color: inherit;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    header .content {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    header .nav-link {
+        color: var(--color-white) !important;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-left: 2rem;
+    }
+}
+
+header span.text {
+    font-weight: normal;
+    font-size: 1.5rem;
+}

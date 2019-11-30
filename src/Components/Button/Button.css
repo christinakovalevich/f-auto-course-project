@@ -1,0 +1,19 @@
+button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 1rem;
+
+    border-radius: 25px !important;
+    border: none;
+    outline: none;
+
+    height: 50px;
+    width: 100%;
+
+    transition-duration: .5s;
+}
+
+button:hover {
+    box-shadow: var(--box-shadow);
+}
