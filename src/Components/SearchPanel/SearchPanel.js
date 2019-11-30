@@ -6,7 +6,7 @@ import Button from "../Button";
 
 const SearchPanel = () => {
     return (
-        <div className="search-panel">
+        <div className="search-panel" id="search-panel">
             <Container>
                 <Row>
                     <Col>

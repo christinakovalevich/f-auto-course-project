@@ -1,30 +1,19 @@
 import React from "react";
 import './ReviewPanel.css'
-import {Col, Container, Row} from "react-bootstrap";
-import userAvatar1 from './assets/user-avatar-1.png'
+import {Carousel, Col, Container, Row} from "react-bootstrap";
 
-const users = [{
-    id:0, name: 'Руслан', avatar: userAvatar1
-}];
+const ReviewPanel = (props) => {
 
-const ReviewPanel = () => {
+    const {usersReviews} = props;
 
-    const userReviews = [
-        {
-            user: users.pop(),
-            review: {
-                text: '«В силу специфики моей работы знаю Компанию Ф-АВТО \n' +
-                    'уже очень давно. С самого первого момента отметил для себя профессиональный подход руководства компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-                date: '03.11.2019'
-            }
-        }
-    ];
-
-    const userReviewsElements = userReviews.map(it => (
-        <UserReview
-            user={it.user}
-            review={it.review}
-        />
+    const carouselItems = usersReviews.map(it => (
+        <Carousel.Item key={"carouselItem-" + it.id}>
+            <UserReview
+                key={'review-' + it.id}
+                user={it.user}
+                review={it.review}
+            />
+        </Carousel.Item>
     ));
 
     return (
@@ -38,8 +27,12 @@ const ReviewPanel = () => {
                     </Col>
                 </Row>
                 <Row className="justify-content-lg-center">
-                <Col sm={12} md={8} lg={6}>
-                    {userReviewsElements}
+                <Col sm={12} md={8} lg={8}>
+
+                    <Carousel>
+                        { carouselItems }
+                    </Carousel>
+
                 </Col>
             </Row>
 

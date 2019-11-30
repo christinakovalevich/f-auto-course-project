@@ -5,13 +5,15 @@
     --color-white: #FFFFFF;
 }
 
+*{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    scroll-behavior: smooth;
 }
 
 select:focus {
@@ -19,4 +21,9 @@ select:focus {
     border-color: rgba(55, 0, 212, 0.5) !important;
     outline: 0 !important;
     box-shadow: 0 0 0 0.2rem rgba(55, 0, 212, 0.4) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
 }

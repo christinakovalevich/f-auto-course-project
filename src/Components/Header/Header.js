@@ -45,7 +45,9 @@ const Header = (props) => {
                         <Row>
                             <Col sm={12} md={4} lg={3}>
                                 <div className="button-container">
-                                    <Button label="Найти"/>
+                                    <Button
+                                        href="#search-panel"
+                                        label="Найти"/>
                                 </div>
                             </Col>
                         </Row>
