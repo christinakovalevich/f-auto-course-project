@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/f-auto-course-project/static/css/main.4717f3c1.chunk.css",
-    "main.js": "/f-auto-course-project/static/js/main.f77f96af.chunk.js",
-    "main.js.map": "/f-auto-course-project/static/js/main.f77f96af.chunk.js.map",
+    "main.js": "/f-auto-course-project/static/js/main.b64ac7c9.chunk.js",
+    "main.js.map": "/f-auto-course-project/static/js/main.b64ac7c9.chunk.js.map",
     "runtime-main.js": "/f-auto-course-project/static/js/runtime-main.c372d692.js",
     "runtime-main.js.map": "/f-auto-course-project/static/js/runtime-main.c372d692.js.map",
     "static/css/2.17e5ed98.chunk.css": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css",
     "static/js/2.94f2237f.chunk.js": "/f-auto-course-project/static/js/2.94f2237f.chunk.js",
     "static/js/2.94f2237f.chunk.js.map": "/f-auto-course-project/static/js/2.94f2237f.chunk.js.map",
     "index.html": "/f-auto-course-project/index.html",
-    "precache-manifest.587fa402adfc34f51e58f7d079a9faae.js": "/f-auto-course-project/precache-manifest.587fa402adfc34f51e58f7d079a9faae.js",
+    "precache-manifest.9c5998663d0250fc5aac783a1d6b04ec.js": "/f-auto-course-project/precache-manifest.9c5998663d0250fc5aac783a1d6b04ec.js",
     "service-worker.js": "/f-auto-course-project/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css.map",
     "static/css/main.4717f3c1.chunk.css.map": "/f-auto-course-project/static/css/main.4717f3c1.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.94f2237f.chunk.js",
     "static/css/main.4717f3c1.chunk.css",
-    "static/js/main.f77f96af.chunk.js"
+    "static/js/main.b64ac7c9.chunk.js"
   ]
 }
