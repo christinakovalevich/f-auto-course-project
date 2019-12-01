@@ -5,8 +5,6 @@ import {Col, Container, Form, Row} from "react-bootstrap";
 import Button from "../Button";
 
 const SearchPanel = (props) => {
-
-
     const {title = 'title', searchPanelFormItems = []} = props;
 
     const searchPanelFormElements = searchPanelFormItems.map(it => (
@@ -19,7 +17,7 @@ const SearchPanel = (props) => {
             >{it.label}</Form.Label>
             <Form.Control key={`select-${it.id}`}
                           id={it.id}
-                          as="select" >
+                          as="select">
                 {
                     it.options.map(option => (
                         <option

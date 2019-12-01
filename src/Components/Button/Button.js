@@ -8,11 +8,11 @@ const Button = (props) => {
 
     const element = (href && href !== '') ? (
         <a className="button"
-           href={href}>{ label }</a>
+           href={href}>{label}</a>
     ) : (
         <button
             className="button"
-            onClick={onClick}>{ label }
+            onClick={onClick}>{label}
         </button>
     );
 

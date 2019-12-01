@@ -5,9 +5,8 @@ import {Col, Container, Nav, Navbar, Row} from "react-bootstrap";
 
 import Button from "../Button";
 
-
 const Header = (props) => {
-    const {app, navLinkItems, logo = app.name.en, title='title', text='text'} = props;
+    const {app, navLinkItems, logo = app.name.en, title = 'title', text = 'text'} = props;
 
     const navLinkElements = navLinkItems.map(it => (
         <Nav.Link key={`nav-link-item-${it.id}`} href={it.href}>{it.label}</Nav.Link>
