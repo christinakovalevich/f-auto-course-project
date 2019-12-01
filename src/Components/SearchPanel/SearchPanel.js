@@ -4,40 +4,12 @@ import {Col, Container, Form, Row} from "react-bootstrap";
 
 import Button from "../Button";
 
-const SearchPanel = () => {
+const SearchPanel = (props) => {
 
-    const searchFormItems = [
-        {
-            id: 'brand', label: 'Марка авто', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
-        },
-        {
-            id: 'model', label: 'Модель', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
-        },
-        {
-            id: 'year', label: 'Год выпуска', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
-        },
-        {
-            id: 'detail', label: 'Запчасть', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
-        },
-    ];
 
-    const searchFormCols = searchFormItems.map(it => (
+    const {title = 'title', searchPanelFormItems = []} = props;
+
+    const searchPanelFormElements = searchPanelFormItems.map(it => (
         <Col key={'col-' + it.id}
              sm={12} md={true} lg={true}>
             <Form.Label
@@ -66,7 +38,7 @@ const SearchPanel = () => {
                 <Row>
                     <Col>
                         <div className="title-container">
-                            <h1>Быстрый поиск детали</h1>
+                            <h1>{title}</h1>
                         </div>
                     </Col>
                 </Row>
@@ -75,7 +47,7 @@ const SearchPanel = () => {
                     <Form>
                         <Form.Group as={Row}>
                             {
-                                searchFormCols
+                                searchPanelFormElements
                             }
                             <Col sm={12} md={true} lg={true}>
                                 <Form.Label style={{'visibility': 'hidden'}}>_</Form.Label>
