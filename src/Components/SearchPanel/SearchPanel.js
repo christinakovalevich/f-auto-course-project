@@ -10,20 +10,20 @@ const SearchPanel = (props) => {
     const {title = 'title', searchPanelFormItems = []} = props;
 
     const searchPanelFormElements = searchPanelFormItems.map(it => (
-        <Col key={'col-' + it.id}
+        <Col key={`col-${it.id}`}
              sm={12} md={true} lg={true}>
             <Form.Label
-                key={'label-' + it.id}
+                key={`label-${it.id}`}
                 htmlFor={it.id}
                 className="cursor-pointer"
             >{it.label}</Form.Label>
-            <Form.Control key={'select-' + it.id}
+            <Form.Control key={`select-${it.id}`}
                           id={it.id}
                           as="select" >
                 {
                     it.options.map(option => (
                         <option
-                            key={'option-' + it.id + '-' + option.id}
+                            key={`option-${it.id}-${option.id}`}
                             value={option.value}
                         >{option.label}</option>
                     ))

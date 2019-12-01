@@ -1,6 +1,7 @@
 import React from "react";
 import './ReviewPanel.css'
 import {Carousel, Col, Container, Row} from "react-bootstrap";
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
@@ -10,9 +11,9 @@ const ReviewPanel = (props) => {
     const {usersReviews} = props;
 
     const carouselItems = usersReviews.map(it => (
-        <Carousel.Item key={"carouselItem-" + it.id}>
+        <Carousel.Item key={`carouselItem-${it.id}`}>
             <UserReview
-                key={'review-' + it.id}
+                key={`review-${it.id}`}
                 user={it.user}
                 review={it.review}
             />
