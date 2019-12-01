@@ -12,13 +12,22 @@ import userAvatar2 from "./assets/user-avatar-2.png";
 import userAvatar3 from "./assets/user-avatar-3.png";
 
 const app = {
-    name: 'F-AUTO'
+    name: {
+        en: 'F:AUTO',
+        ru: 'Ф:АВТО'
+    },
 };
 
 function App() {
     return (
         <div className="App">
-            <Header app={app}/>
+            <Header
+                app={app}
+                logo={getHeaderLogo()}
+                title={getHeaderTitle()}
+                text={getHeaderText()}
+                navLinkItems={getNavLinkItems()}
+            />
             <SearchPanel/>
             <BenefitsPanel/>
             <ReviewPanel
@@ -27,6 +36,28 @@ function App() {
         </div>
     );
 }
+
+const getHeaderTitle = () => {
+    return 'Найти автозапчасти — легко!'
+};
+
+const getHeaderText = () => {
+    return 'Автозапчасти только от проверенных продавцов.'
+};
+
+const getHeaderLogo = () => {
+
+};
+
+const getNavLinkItems = () => {
+    return [
+        {id: 0, href: '#about-us', label: 'О Нас'},
+        {id: 1, href: '/catalog', label: 'Каталог'},
+        {id: 2, href: '#customers-reviews', label: 'Отзывы'},
+        {id: 3, href: '#contacts', label: 'Контакты'},
+        {id: 4, href: '/signIn', label: 'Войти'},
+    ];
+};
 
 const getUsersReviews = () => {
 
