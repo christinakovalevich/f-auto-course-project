@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/f-auto-course-project/static/css/main.98b38f2d.chunk.css",
-    "main.js": "/f-auto-course-project/static/js/main.fb376d4b.chunk.js",
-    "main.js.map": "/f-auto-course-project/static/js/main.fb376d4b.chunk.js.map",
+    "main.css": "/f-auto-course-project/static/css/main.ff25bb70.chunk.css",
+    "main.js": "/f-auto-course-project/static/js/main.1624ce0a.chunk.js",
+    "main.js.map": "/f-auto-course-project/static/js/main.1624ce0a.chunk.js.map",
     "runtime-main.js": "/f-auto-course-project/static/js/runtime-main.c372d692.js",
     "runtime-main.js.map": "/f-auto-course-project/static/js/runtime-main.c372d692.js.map",
     "static/css/2.17e5ed98.chunk.css": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css",
     "static/js/2.eef77bad.chunk.js": "/f-auto-course-project/static/js/2.eef77bad.chunk.js",
     "static/js/2.eef77bad.chunk.js.map": "/f-auto-course-project/static/js/2.eef77bad.chunk.js.map",
     "index.html": "/f-auto-course-project/index.html",
-    "precache-manifest.72d3091e05b4dce1d9f1944d043b5898.js": "/f-auto-course-project/precache-manifest.72d3091e05b4dce1d9f1944d043b5898.js",
+    "precache-manifest.8e37b1480faf385726b02be91e46bf4c.js": "/f-auto-course-project/precache-manifest.8e37b1480faf385726b02be91e46bf4c.js",
     "service-worker.js": "/f-auto-course-project/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.98b38f2d.chunk.css.map": "/f-auto-course-project/static/css/main.98b38f2d.chunk.css.map",
+    "static/css/main.ff25bb70.chunk.css.map": "/f-auto-course-project/static/css/main.ff25bb70.chunk.css.map",
     "static/media/benefit-item-1.svg": "/f-auto-course-project/static/media/benefit-item-1.4550a0a4.svg",
     "static/media/benefit-item-2.svg": "/f-auto-course-project/static/media/benefit-item-2.cbb9260d.svg",
     "static/media/benefit-item-3.svg": "/f-auto-course-project/static/media/benefit-item-3.56d30188.svg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.c372d692.js",
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.eef77bad.chunk.js",
-    "static/css/main.98b38f2d.chunk.css",
-    "static/js/main.fb376d4b.chunk.js"
+    "static/css/main.ff25bb70.chunk.css",
+    "static/js/main.1624ce0a.chunk.js"
   ]
 }
