@@ -2,6 +2,7 @@ import React from "react";
 import './WarrantyPanel.css'
 import {Col, Container, Row} from "react-bootstrap";
 import WarrantyItem from "../WarrantyItem";
+import Button from "../../Button";
 
 const WarrantyPanel = (props) => {
     const {title = 'title', warrantyPanelItems = []} = props;
@@ -26,8 +27,17 @@ const WarrantyPanel = (props) => {
                     </Col>
                 </Row>
 
-                <Row className="mt-4">
+                <Row className="content">
                     {warrantyPanelElements}
+                </Row>
+
+                <Row className="justify-content-center button-container">
+                    <Col sm={12} md={3} lg={4}>
+                        <Button
+                            label="Подробнее"
+                            href="warranty"
+                        />
+                    </Col>
                 </Row>
 
             </Container>
