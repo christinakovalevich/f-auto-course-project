@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/f-auto-course-project/static/css/main.e62a5c0d.chunk.css",
-    "main.js": "/f-auto-course-project/static/js/main.1cf25827.chunk.js",
-    "main.js.map": "/f-auto-course-project/static/js/main.1cf25827.chunk.js.map",
+    "main.css": "/f-auto-course-project/static/css/main.98b38f2d.chunk.css",
+    "main.js": "/f-auto-course-project/static/js/main.fb376d4b.chunk.js",
+    "main.js.map": "/f-auto-course-project/static/js/main.fb376d4b.chunk.js.map",
     "runtime-main.js": "/f-auto-course-project/static/js/runtime-main.c372d692.js",
     "runtime-main.js.map": "/f-auto-course-project/static/js/runtime-main.c372d692.js.map",
     "static/css/2.17e5ed98.chunk.css": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.4e6cb570.chunk.js": "/f-auto-course-project/static/js/2.4e6cb570.chunk.js",
-    "static/js/2.4e6cb570.chunk.js.map": "/f-auto-course-project/static/js/2.4e6cb570.chunk.js.map",
+    "static/js/2.eef77bad.chunk.js": "/f-auto-course-project/static/js/2.eef77bad.chunk.js",
+    "static/js/2.eef77bad.chunk.js.map": "/f-auto-course-project/static/js/2.eef77bad.chunk.js.map",
     "index.html": "/f-auto-course-project/index.html",
-    "precache-manifest.6b9b302ebc082454122f1e5bf0651820.js": "/f-auto-course-project/precache-manifest.6b9b302ebc082454122f1e5bf0651820.js",
+    "precache-manifest.72d3091e05b4dce1d9f1944d043b5898.js": "/f-auto-course-project/precache-manifest.72d3091e05b4dce1d9f1944d043b5898.js",
     "service-worker.js": "/f-auto-course-project/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.e62a5c0d.chunk.css.map": "/f-auto-course-project/static/css/main.e62a5c0d.chunk.css.map",
+    "static/css/main.98b38f2d.chunk.css.map": "/f-auto-course-project/static/css/main.98b38f2d.chunk.css.map",
     "static/media/benefit-item-1.svg": "/f-auto-course-project/static/media/benefit-item-1.4550a0a4.svg",
     "static/media/benefit-item-2.svg": "/f-auto-course-project/static/media/benefit-item-2.cbb9260d.svg",
     "static/media/benefit-item-3.svg": "/f-auto-course-project/static/media/benefit-item-3.56d30188.svg",
@@ -22,18 +22,13 @@
     "static/media/user-avatar-1.svg": "/f-auto-course-project/static/media/user-avatar-1.3d7c2365.svg",
     "static/media/user-avatar-2.svg": "/f-auto-course-project/static/media/user-avatar-2.7a7d93b9.svg",
     "static/media/user-avatar-3.svg": "/f-auto-course-project/static/media/user-avatar-3.448a375b.svg",
-    "static/media/user-avatar-4.svg": "/f-auto-course-project/static/media/user-avatar-4.44509fc6.svg",
-    "static/media/user-avatar-5.svg": "/f-auto-course-project/static/media/user-avatar-5.6bbf5464.svg",
-    "static/media/user-avatar-6.svg": "/f-auto-course-project/static/media/user-avatar-6.eae02ae5.svg",
-    "static/media/user-avatar-7.svg": "/f-auto-course-project/static/media/user-avatar-7.e25323cf.svg",
-    "static/media/user-avatar-8.svg": "/f-auto-course-project/static/media/user-avatar-8.74839cce.svg",
-    "static/media/user-avatar-9.svg": "/f-auto-course-project/static/media/user-avatar-9.67a7e55d.svg"
+    "static/media/user-avatar-4.svg": "/f-auto-course-project/static/media/user-avatar-4.44509fc6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c372d692.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.4e6cb570.chunk.js",
-    "static/css/main.e62a5c0d.chunk.css",
-    "static/js/main.1cf25827.chunk.js"
+    "static/js/2.eef77bad.chunk.js",
+    "static/css/main.98b38f2d.chunk.css",
+    "static/js/main.fb376d4b.chunk.js"
   ]
 }
