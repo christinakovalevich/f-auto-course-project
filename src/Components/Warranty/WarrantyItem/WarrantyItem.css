@@ -1,0 +1,22 @@
+.warranty-item {
+    text-align: center;
+}
+
+.warranty-item .days {
+    color: var(--color-blue);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.warranty-item .days .label {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    vertical-align: middle;
+    padding-left: .5rem;
+}
+
+.warranty-item .text {
+    font-size: .875rem;
+}
+

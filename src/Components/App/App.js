@@ -6,6 +6,7 @@ import Header from "../Header";
 import SearchPanel from "../SearchPanel";
 import BenefitsPanel from "../Benefit/BenefitsPanel";
 import ReviewPanel from "../Review/ReviewsPanel";
+import WarrantyPanel from '../Warranty/WarrantyPanel'
 import Footer from "../Footer";
 
 import userAvatar0 from "./assets/ReviewsPanel/Avatars/user-avatar-0.svg";
@@ -13,16 +14,15 @@ import userAvatar1 from "./assets/ReviewsPanel/Avatars/user-avatar-1.svg";
 import userAvatar2 from "./assets/ReviewsPanel/Avatars/user-avatar-2.svg";
 import userAvatar3 from "./assets/ReviewsPanel/Avatars/user-avatar-3.svg";
 import userAvatar4 from "./assets/ReviewsPanel/Avatars/user-avatar-4.svg";
-import userAvatar5 from "./assets/ReviewsPanel/Avatars/user-avatar-5.svg";
-import userAvatar6 from "./assets/ReviewsPanel/Avatars/user-avatar-6.svg";
-import userAvatar7 from "./assets/ReviewsPanel/Avatars/user-avatar-7.svg";
-import userAvatar8 from "./assets/ReviewsPanel/Avatars/user-avatar-8.svg";
-import userAvatar9 from "./assets/ReviewsPanel/Avatars/user-avatar-9.svg";
-
 import benefitItemImg1 from './assets/BenefitsPanel/items/benefit-item-1.svg';
 import benefitItemImg2 from './assets/BenefitsPanel/items/benefit-item-2.svg';
 import benefitItemImg3 from './assets/BenefitsPanel/items/benefit-item-3.svg';
 import benefitItemImg4 from './assets/BenefitsPanel/items/benefit-item-4.svg';
+// import userAvatar5 from "./assets/ReviewsPanel/Avatars/user-avatar-5.svg";
+// import userAvatar6 from "./assets/ReviewsPanel/Avatars/user-avatar-6.svg";
+// import userAvatar7 from "./assets/ReviewsPanel/Avatars/user-avatar-7.svg";
+// import userAvatar8 from "./assets/ReviewsPanel/Avatars/user-avatar-8.svg";
+// import userAvatar9 from "./assets/ReviewsPanel/Avatars/user-avatar-9.svg";
 
 const avatars = [
     userAvatar0,
@@ -30,11 +30,11 @@ const avatars = [
     userAvatar2,
     userAvatar3,
     userAvatar4,
-    userAvatar5,
-    userAvatar6,
-    userAvatar7,
-    userAvatar8,
-    userAvatar9,
+    // userAvatar5,
+    // userAvatar6,
+    // userAvatar7,
+    // userAvatar8,
+    // userAvatar9,
 ];
 
 const app = {
@@ -65,7 +65,13 @@ function App() {
             <ReviewPanel
                 usersReviews={getUsersReviews()}
             />
+
+            <WarrantyPanel
+                title="Гарантия и сертификаты качества"
+                warrantyPanelItems={getWarrantyItems()}
+            />
             <Footer/>
+
         </div>
     );
 }
@@ -183,11 +189,11 @@ const getUsers = () => {
         {id: 2, name: 'Максим', avatar: avatars[2]},
         {id: 3, name: 'Игнат', avatar: avatars[3]},
         {id: 4, name: 'Валерий', avatar: avatars[4]},
-        {id: 5, name: 'Филипп', avatar: avatars[5]},
-        {id: 6, name: 'Кирилл', avatar: avatars[6]},
-        {id: 7, name: 'Александр', avatar: avatars[7]},
-        {id: 8, name: 'Михаил', avatar: avatars[8]},
-        {id: 9, name: 'Антон', avatar: avatars[9]},
+        // {id: 5, name: 'Филипп', avatar: avatars[5]},
+        // {id: 6, name: 'Кирилл', avatar: avatars[6]},
+        // {id: 7, name: 'Александр', avatar: avatars[7]},
+        // {id: 8, name: 'Михаил', avatar: avatars[8]},
+        // {id: 9, name: 'Антон', avatar: avatars[9]},
     ];
 };
 
@@ -228,47 +234,56 @@ const getReviews = () => {
                 'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
             date: getRandomDate(new Date(2012, 0, 1))
         },
-        {
-            id: 5,
-            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-                'С самого первого момента отметил для себя профессиональный подход руководства ' +
-                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-            date: getRandomDate(new Date(2012, 0, 1))
-        },
-        {
-            id: 6,
-            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-                'С самого первого момента отметил для себя профессиональный подход руководства ' +
-                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-            date: getRandomDate(new Date(2012, 0, 1))
-        },
-        {
-            id: 7,
-            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-                'С самого первого момента отметил для себя профессиональный подход руководства ' +
-                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-            date: getRandomDate(new Date(2012, 0, 1))
-        },
-        {
-            id: 8,
-            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-                'С самого первого момента отметил для себя профессиональный подход руководства ' +
-                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-            date: getRandomDate(new Date(2012, 0, 1))
-        },
-        {
-            id: 9,
-            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-                'С самого первого момента отметил для себя профессиональный подход руководства ' +
-                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-            date: getRandomDate(new Date(2012, 0, 1))
-        },
+        // {
+        //     id: 5,
+        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
+        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+        //     date: getRandomDate(new Date(2012, 0, 1))
+        // },
+        // {
+        //     id: 6,
+        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
+        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+        //     date: getRandomDate(new Date(2012, 0, 1))
+        // },
+        // {
+        //     id: 7,
+        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
+        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+        //     date: getRandomDate(new Date(2012, 0, 1))
+        // },
+        // {
+        //     id: 8,
+        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
+        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+        //     date: getRandomDate(new Date(2012, 0, 1))
+        // },
+        // {
+        //     id: 9,
+        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
+        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+        //     date: getRandomDate(new Date(2012, 0, 1))
+        // },
     ]
 };
 
 const getRandomDate = (start, end = new Date()) => {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
         .toLocaleDateString()
+};
+
+const getWarrantyItems = () => {
+    return [
+        {id: 0, days: 60, text: 'на двигатели '},
+        {id: 1, days: 14, text: 'на коробки передач и редукторы'},
+        {id: 2, days: 7, text: 'на колесные диски'},
+        {id: 3, days: 14, text: 'на прочие запчасти'},
+    ]
 };
 
 export default App;
