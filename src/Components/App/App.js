@@ -11,21 +11,22 @@ import JobOfferPanel from "../JobOffer/JobOfferPanel";
 import DeliveryPanel from "../DeliveryPanel";
 import Footer from "../Footer";
 
-import userAvatar0 from "./assets/ReviewsPanel/Avatars/user-avatar-0.svg";
-import userAvatar1 from "./assets/ReviewsPanel/Avatars/user-avatar-1.svg";
-import userAvatar2 from "./assets/ReviewsPanel/Avatars/user-avatar-2.svg";
-import userAvatar3 from "./assets/ReviewsPanel/Avatars/user-avatar-3.svg";
-import userAvatar4 from "./assets/ReviewsPanel/Avatars/user-avatar-4.svg";
+import userAvatar0 from "./assets/ReviewsPanel/Avatars/user-avatar-0 1.png";
+import userAvatar1 from "./assets/ReviewsPanel/Avatars/user-avatar-1 1.png";
+import userAvatar2 from "./assets/ReviewsPanel/Avatars/user-avatar-2 1.png";
+import userAvatar3 from "./assets/ReviewsPanel/Avatars/user-avatar-3 1.png";
+import userAvatar4 from "./assets/ReviewsPanel/Avatars/user-avatar-4 1.png";
+import userAvatar5 from "./assets/ReviewsPanel/Avatars/user-avatar-5 1.png";
+import userAvatar6 from "./assets/ReviewsPanel/Avatars/user-avatar-6 1.png";
+import userAvatar7 from "./assets/ReviewsPanel/Avatars/user-avatar-7 1.png";
+import userAvatar8 from "./assets/ReviewsPanel/Avatars/user-avatar-8 1.png";
+import userAvatar9 from "./assets/ReviewsPanel/Avatars/user-avatar-9 1.png";
+
 import benefitItemImg1 from './assets/BenefitsPanel/items/benefit-item-1.svg';
 import benefitItemImg2 from './assets/BenefitsPanel/items/benefit-item-2.svg';
 import benefitItemImg3 from './assets/BenefitsPanel/items/benefit-item-3.svg';
 import benefitItemImg4 from './assets/BenefitsPanel/items/benefit-item-4.svg';
 import mapImg from './assets/DeliveryPanel/map.png'
-// import userAvatar5 from "./assets/ReviewsPanel/Avatars/user-avatar-5.svg";
-// import userAvatar6 from "./assets/ReviewsPanel/Avatars/user-avatar-6.svg";
-// import userAvatar7 from "./assets/ReviewsPanel/Avatars/user-avatar-7.svg";
-// import userAvatar8 from "./assets/ReviewsPanel/Avatars/user-avatar-8.svg";
-// import userAvatar9 from "./assets/ReviewsPanel/Avatars/user-avatar-9.svg";
 
 const avatars = [
     userAvatar0,
@@ -33,11 +34,11 @@ const avatars = [
     userAvatar2,
     userAvatar3,
     userAvatar4,
-    // userAvatar5,
-    // userAvatar6,
-    // userAvatar7,
-    // userAvatar8,
-    // userAvatar9,
+    userAvatar5,
+    userAvatar6,
+    userAvatar7,
+    userAvatar8,
+    userAvatar9,
 ];
 
 const app = {
@@ -207,11 +208,11 @@ const getUsers = () => {
         {id: 2, name: 'Максим', avatar: avatars[2]},
         {id: 3, name: 'Игнат', avatar: avatars[3]},
         {id: 4, name: 'Валерий', avatar: avatars[4]},
-        // {id: 5, name: 'Филипп', avatar: avatars[5]},
-        // {id: 6, name: 'Кирилл', avatar: avatars[6]},
-        // {id: 7, name: 'Александр', avatar: avatars[7]},
-        // {id: 8, name: 'Михаил', avatar: avatars[8]},
-        // {id: 9, name: 'Антон', avatar: avatars[9]},
+        {id: 5, name: 'Филипп', avatar: avatars[5]},
+        {id: 6, name: 'Кирилл', avatar: avatars[6]},
+        {id: 7, name: 'Александр', avatar: avatars[7]},
+        {id: 8, name: 'Михаил', avatar: avatars[8]},
+        {id: 9, name: 'Антон', avatar: avatars[9]},
     ];
 };
 
@@ -252,41 +253,41 @@ const getReviews = () => {
                 'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
             date: getRandomDate(new Date(2012, 0, 1))
         },
-        // {
-        //     id: 5,
-        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
-        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-        //     date: getRandomDate(new Date(2012, 0, 1))
-        // },
-        // {
-        //     id: 6,
-        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
-        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-        //     date: getRandomDate(new Date(2012, 0, 1))
-        // },
-        // {
-        //     id: 7,
-        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
-        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-        //     date: getRandomDate(new Date(2012, 0, 1))
-        // },
-        // {
-        //     id: 8,
-        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
-        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-        //     date: getRandomDate(new Date(2012, 0, 1))
-        // },
-        // {
-        //     id: 9,
-        //     text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
-        //         'С самого первого момента отметил для себя профессиональный подход руководства ' +
-        //         'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
-        //     date: getRandomDate(new Date(2012, 0, 1))
-        // },
+        {
+            id: 5,
+            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+                'С самого первого момента отметил для себя профессиональный подход руководства ' +
+                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+            date: getRandomDate(new Date(2012, 0, 1))
+        },
+        {
+            id: 6,
+            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+                'С самого первого момента отметил для себя профессиональный подход руководства ' +
+                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+            date: getRandomDate(new Date(2012, 0, 1))
+        },
+        {
+            id: 7,
+            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+                'С самого первого момента отметил для себя профессиональный подход руководства ' +
+                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+            date: getRandomDate(new Date(2012, 0, 1))
+        },
+        {
+            id: 8,
+            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+                'С самого первого момента отметил для себя профессиональный подход руководства ' +
+                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+            date: getRandomDate(new Date(2012, 0, 1))
+        },
+        {
+            id: 9,
+            text: '«В силу специфики моей работы знаю Компанию Ф-АВТО уже очень давно. ' +
+                'С самого первого момента отметил для себя профессиональный подход руководства ' +
+                'компании к формированию команды и выстраиванию бизнес-процессов. Рекомендую!»',
+            date: getRandomDate(new Date(2012, 0, 1))
+        },
     ]
 };
 
@@ -384,10 +385,6 @@ const getSelfDeliveryOptions = () => {
         }
     ]
 };
-
-//Доставку осуществляем в 32 города Беларуси.
-// Заказы, поступившие до 12:00 доставим в этот же день, после 12:00 - на следующий день.
-// Стоимость доставки по Минску — 10 BYN, по Беларуси — 50 BYN.   При заказе товара на сумму,больше 600 BYN — доставка в любой город БЕСПЛАТНО.
 
 const getDeliveryOptions = () => {
     return [
