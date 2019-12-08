@@ -8,7 +8,7 @@ const WarrantyPanel = (props) => {
     const {title = 'title', warrantyPanelItems = []} = props;
 
     const warrantyPanelElements = warrantyPanelItems.map(it => (
-        <Col key={`warranty-item-col-${it.id}`} sm={12} md={3} lg={3}>
+        <Col key={`warranty-item-col-${it.id}`} sm={12} md={true} lg={true}>
             <WarrantyItem
                 key={`warranty-item-${it.id}`}
                 days={it.days}

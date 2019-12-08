@@ -1,10 +1,22 @@
 import React from "react";
 import './JobOfferPanel.css'
 import {Col, Container, Row} from "react-bootstrap";
+import JobOfferItem from "../JobOfferItem";
 
 const JobOfferPanel = (props) => {
-
     const {title='title', jobOfferItems} = props;
+
+    const warrantyPanelElements = jobOfferItems.map(it => (
+        <Col key={`job-offer-item-col-${it.id}`} sm={12} md={true} lg={true}>
+            <JobOfferItem
+                key={`job-offer-item-${it.id}`}
+                id={it.id}
+                title={it.title}
+                salary={it.salary}
+                functions={it.functions}
+            />
+        </Col>
+    ));
 
     return (
         <div className="job-offer-panel panel panel-grey">
@@ -16,13 +28,7 @@ const JobOfferPanel = (props) => {
                 </Row>
 
                 <Row className="content">
-                    {}
-                </Row>
-
-                <Row className="justify-content-center button-container no-gutters">
-                    <Col sm={12} md={12} lg={12}>
-
-                    </Col>
+                    {warrantyPanelElements}
                 </Row>
             </Container>
         </div>

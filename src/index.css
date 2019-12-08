@@ -62,3 +62,11 @@ select:focus {
     color: var(--color-black);
 }
 
+.shadow-on-hover {
+    transition-duration: var(--transition-duration-half);
+}
+
+.shadow-on-hover:hover {
+    box-shadow: var(--box-shadow);
+}
+
