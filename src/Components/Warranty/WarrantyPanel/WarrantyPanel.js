@@ -31,8 +31,8 @@ const WarrantyPanel = (props) => {
                     {warrantyPanelElements}
                 </Row>
 
-                <Row className="justify-content-center button-container">
-                    <Col sm={12} md={3} lg={4}>
+                <Row className="justify-content-center button-container no-gutters">
+                    <Col sm={12} md={true} lg={true}>
                         <Button
                             label="Подробнее"
                             href="warranty"
