@@ -52,6 +52,10 @@ const SearchPanel = (props) => {
                                 <Form.Label style={{'visibility': 'hidden'}}>_</Form.Label>
                                 <Button
                                     label="Найти"
+                                    onClick={event => {
+                                        event.preventDefault();
+                                        window.open('https://f-avto.by/', '_blank')}
+                                    }
                                 />
                             </Col>
                         </Form.Group>

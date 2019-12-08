@@ -36,10 +36,6 @@ select:focus {
     box-shadow: 0 0 0 0.2rem rgba(55, 0, 212, 0.4) !important;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-}
-
 .cursor-pointer {
     cursor: pointer !important;
 }

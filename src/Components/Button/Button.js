@@ -12,7 +12,7 @@ const Button = (props) => {
     ) : (
         <button
             className="button shadow-on-hover"
-            onClick={onClick}>{label}
+            onClick={e => onClick()}>{label}
         </button>
     );
 

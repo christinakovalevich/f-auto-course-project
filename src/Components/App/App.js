@@ -109,11 +109,11 @@ const getAppLogo = () => {
 
 const getNavLinkItems = () => {
     return [
-        {id: 0, href: '#about-us', label: 'О Нас'},
-        {id: 1, href: '/catalog', label: 'Каталог'},
-        {id: 2, href: '#review-panel', label: 'Отзывы'},
-        {id: 3, href: '#contacts', label: 'Контакты'},
-        {id: 4, href: '#job-offer-panel', label: 'Вакансии'},
+        { id: 0, href: '#about-us', label: 'О Нас' },
+        { id: 1, href: '/catalog', label: 'Каталог' },
+        { id: 2, href: '#review-panel', label: 'Отзывы' },
+        { id: 3, href: '#contacts', label: 'Контакты' },
+        { id: 4, href: '#job-offer-panel', label: 'Вакансии' },
     ];
 };
 
@@ -124,35 +124,84 @@ const getSearchPanelTitle = () => {
 const getSearchPanelFormItems = () => {
     return [
         {
-            id: 'brand', label: 'Марка авто', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
+            id: 'brand', label: 'Марка авто', options: getBrands()
         },
         {
-            id: 'model', label: 'Модель', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
+            id: 'type', label: 'Тип кузова', options: getCorpusTypes()
         },
         {
-            id: 'year', label: 'Год выпуска', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
+            id: 'year', label: 'Год выпуска', options: getYears(1990)
         },
         {
-            id: 'detail', label: 'Запчасть', options: [
-                {id: 1, label: '', value: ''},
-                {id: 2, label: '', value: ''},
-                {id: 3, label: '', value: ''},
-            ]
+            id: 'detail', label: 'Запчасть', options: getDetails()
         },
     ];
 };
+
+const getDetails = () => {
+    return [
+        { id: 0, label: 'Двигатель', value: 'Двигатель' },
+        { id: 1, label: 'Оптика и свет', value: 'Оптика и свет' },
+        { id: 2, label: 'Системы охлаждения', value: 'Системы охлаждения' },
+        { id: 3, label: 'Подвеска', value: 'Подвеска' },
+        { id: 4, label: 'Топливная система', value: 'Топливная система' },
+    ]
+}
+
+const getYears = (yearFrom = 1980) => {
+    const currentYear = new Date().getFullYear();
+
+    const years = []
+
+    let j = 0
+
+    for (let i = yearFrom; i < currentYear; i++) {
+        years.push({ id: j++, label: i, value: i })
+    }
+
+    return years
+}
+
+const getCorpusTypes = () => {
+    return [
+        { id: 0, label: 'Купе', value: 'Купе' },
+        { id: 1, label: 'Хетчбек', value: 'Хетчбек' },
+        { id: 2, label: 'Седан', value: 'Седан' },
+        { id: 3, label: 'Универсал', value: 'Универсал' },
+        { id: 4, label: 'Минивен', value: 'Минивен' },
+        { id: 5, label: 'Кроссовер', value: 'Кроссовер' },
+        { id: 6, label: 'Внедорожник', value: 'Внедорожник' },
+        { id: 7, label: 'Микроавтобус', value: 'Микроавтобус' },
+    ]
+}
+
+const getBrands = () => {
+    return [
+        { id: 0, label: 'Mercedes', value: 'Mercedes' },
+        { id: 1, label: 'Audi', value: 'Audi' },
+        { id: 2, label: 'BMW', value: 'BMW' },
+        { id: 3, label: 'Volkswagen', value: 'Volkswagen' },
+        { id: 4, label: 'Mitsubishi', value: 'Mitsubishi' },
+        { id: 5, label: 'Ford', value: 'Ford' },
+        { id: 6, label: 'Toyota', value: 'Toyota' },
+        { id: 7, label: 'Geely', value: 'Geely' },
+        { id: 8, label: 'Mini', value: 'Mini' },
+        { id: 9, label: 'Opel', value: 'Opel' },
+    ].sort((a, b) => {
+        if (a.label > b.label) {
+            return 1
+        }
+
+        if (a.label < b.label) {
+            return -1
+        }
+
+        if (a.label = b.label) {
+            return 0
+        }
+    }
+    )
+}
 
 const getBenefitsPanelTitle = () => {
     return 'Почему люди выбирают нас'
@@ -203,16 +252,16 @@ const getUsersReviews = () => {
 
 const getUsers = () => {
     return [
-        {id: 0, name: 'Руслан', avatar: avatars[0]},
-        {id: 1, name: 'Андрей', avatar: avatars[1]},
-        {id: 2, name: 'Максим', avatar: avatars[2]},
-        {id: 3, name: 'Игнат', avatar: avatars[3]},
-        {id: 4, name: 'Валерий', avatar: avatars[4]},
-        {id: 5, name: 'Филипп', avatar: avatars[5]},
-        {id: 6, name: 'Кирилл', avatar: avatars[6]},
-        {id: 7, name: 'Александр', avatar: avatars[7]},
-        {id: 8, name: 'Михаил', avatar: avatars[8]},
-        {id: 9, name: 'Антон', avatar: avatars[9]},
+        { id: 0, name: 'Руслан', avatar: avatars[0] },
+        { id: 1, name: 'Андрей', avatar: avatars[1] },
+        { id: 2, name: 'Максим', avatar: avatars[2] },
+        { id: 3, name: 'Игнат', avatar: avatars[3] },
+        { id: 4, name: 'Валерий', avatar: avatars[4] },
+        { id: 5, name: 'Филипп', avatar: avatars[5] },
+        { id: 6, name: 'Кирилл', avatar: avatars[6] },
+        { id: 7, name: 'Александр', avatar: avatars[7] },
+        { id: 8, name: 'Михаил', avatar: avatars[8] },
+        { id: 9, name: 'Антон', avatar: avatars[9] },
     ];
 };
 
@@ -298,10 +347,10 @@ const getRandomDate = (start, end = new Date()) => {
 
 const getWarrantyItems = () => {
     return [
-        {id: 0, days: 60, text: 'на двигатели '},
-        {id: 1, days: 14, text: 'на коробки передач и редукторы'},
-        {id: 2, days: 7, text: 'на колесные диски'},
-        {id: 3, days: 14, text: 'на прочие запчасти'},
+        { id: 0, days: 60, text: 'на двигатели ' },
+        { id: 1, days: 14, text: 'на коробки передач и редукторы' },
+        { id: 2, days: 7, text: 'на колесные диски' },
+        { id: 3, days: 14, text: 'на прочие запчасти' },
     ]
 };
 
