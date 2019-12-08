@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2b9460e29703cdc3062f536b19bcbc17",
+    "revision": "67ba59ed538eb88b8bdc811083ae906d",
     "url": "/f-auto-course-project/index.html"
   },
   {
@@ -8,36 +8,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "bf2f358baa9b12a083be",
-    "url": "/f-auto-course-project/static/css/main.7ef7d915.chunk.css"
+    "revision": "d31cc1718cb663c2b4fb",
+    "url": "/f-auto-course-project/static/css/main.aa1088aa.chunk.css"
   },
   {
     "revision": "2924e5d72da9d37de5ee",
     "url": "/f-auto-course-project/static/js/2.573b2881.chunk.js"
   },
   {
-    "revision": "bf2f358baa9b12a083be",
-    "url": "/f-auto-course-project/static/js/main.bddb2ae7.chunk.js"
+    "revision": "d31cc1718cb663c2b4fb",
+    "url": "/f-auto-course-project/static/js/main.b5002992.chunk.js"
   },
   {
     "revision": "855441f2e542762e41c1",
     "url": "/f-auto-course-project/static/js/runtime-main.c372d692.js"
   },
   {
-    "revision": "4550a0a4da585ab6d520d9beeaa1b95a",
-    "url": "/f-auto-course-project/static/media/benefit-item-1.4550a0a4.svg"
+    "revision": "ad8f299b5ef2cc63f6d60d0d16a377c3",
+    "url": "/f-auto-course-project/static/media/benefit-item-1.ad8f299b.svg"
   },
   {
-    "revision": "cbb9260d226f2915e4b8d8a039f8ad49",
-    "url": "/f-auto-course-project/static/media/benefit-item-2.cbb9260d.svg"
+    "revision": "6db3040eed69300f238c596778804696",
+    "url": "/f-auto-course-project/static/media/benefit-item-2.6db3040e.svg"
   },
   {
-    "revision": "56d30188a990390810db3b6b121b4fa6",
-    "url": "/f-auto-course-project/static/media/benefit-item-3.56d30188.svg"
+    "revision": "46432d885f1c614f30af81e9b769f389",
+    "url": "/f-auto-course-project/static/media/benefit-item-3.46432d88.svg"
   },
   {
-    "revision": "a6040fb2d6ab9efab37bb582a67e6545",
-    "url": "/f-auto-course-project/static/media/benefit-item-4.a6040fb2.svg"
+    "revision": "76b92482f483e66d76882d7e8077aa3f",
+    "url": "/f-auto-course-project/static/media/benefit-item-4.76b92482.svg"
   },
   {
     "revision": "a20b90280edeb6b0e62a35a62cca9d9c",
