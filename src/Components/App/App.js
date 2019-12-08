@@ -7,6 +7,8 @@ import SearchPanel from "../SearchPanel";
 import BenefitsPanel from "../Benefit/BenefitsPanel";
 import ReviewPanel from "../Review/ReviewsPanel";
 import WarrantyPanel from '../Warranty/WarrantyPanel'
+import JobOfferPanel from "../JobOffer/JobOfferPanel";
+import DeliveryPanel from "../DeliveryPanel";
 import Footer from "../Footer";
 
 import userAvatar0 from "./assets/ReviewsPanel/Avatars/user-avatar-0.svg";
@@ -18,7 +20,7 @@ import benefitItemImg1 from './assets/BenefitsPanel/items/benefit-item-1.svg';
 import benefitItemImg2 from './assets/BenefitsPanel/items/benefit-item-2.svg';
 import benefitItemImg3 from './assets/BenefitsPanel/items/benefit-item-3.svg';
 import benefitItemImg4 from './assets/BenefitsPanel/items/benefit-item-4.svg';
-import JobOfferPanel from "../JobOffer/JobOfferPanel";
+import mapImg from './assets/DeliveryPanel/map.png'
 // import userAvatar5 from "./assets/ReviewsPanel/Avatars/user-avatar-5.svg";
 // import userAvatar6 from "./assets/ReviewsPanel/Avatars/user-avatar-6.svg";
 // import userAvatar7 from "./assets/ReviewsPanel/Avatars/user-avatar-7.svg";
@@ -76,6 +78,14 @@ function App() {
                 title={getJobOfferPanelTitle()}
                 jobOfferItems={getJobOfferItems()}
             />
+
+            <DeliveryPanel
+                title={getDeliveryPanelTitle()}
+                mapImg={mapImg}
+                selfDeliveryOptions={getSelfDeliveryOptions()}
+                deliveryOptions={getDeliveryOptions()}
+            />
+
             <Footer/>
 
         </div>
@@ -340,6 +350,56 @@ const getJobOfferItems = () => {
                 'Минимизация налоговых выплат.',
                 'Подготовка документации.'
             ]
+        },
+    ]
+};
+
+const getDeliveryPanelTitle = () => {
+    return 'Доставка'
+};
+
+const getSelfDeliveryOptions = () => {
+    return [
+        {
+            id: 0,
+            text: 'МОТОРЦЕНТР, Рынок «Малиновка», Вт-Вс 9:00 - 17:00.'
+        },
+        {
+            id: 1,
+            text: 'СКЛАД УРУЧЬЕ, г. Минск, ул. Основателей, 35, Пн-Вс 9:00 - 18:00.'
+        },
+        {
+            id: 2,
+            text: 'МАГАЗИН МОТОР, г. Минск, ул. Р.Люксембург, 195, Пн-Пт 9:00 - 18:00, Сб 10:00 - 16:00.'
+        },
+        {
+            id: 3,
+            text: 'МАГАЗИН МОТОР, г. Лида, ул. Кирова, пом.3, Пн-Пт 9:00 - 18:00, Сб 10:00 - 16:00.'
+        },
+        {
+            id: 4,
+            text: 'МАГАЗИН МОТОР, г. Борисов, ул. 1-го июля, 22, Пн-Пт 9:00 - 18:00, Сб 10:00 - 16:00.'
+        }
+    ]
+};
+
+//Доставку осуществляем в 32 города Беларуси.
+// Заказы, поступившие до 12:00 доставим в этот же день, после 12:00 - на следующий день.
+// Стоимость доставки по Минску — 10 BYN, по Беларуси — 50 BYN.   При заказе товара на сумму,больше 600 BYN — доставка в любой город БЕСПЛАТНО.
+
+const getDeliveryOptions = () => {
+    return [
+        {
+            id: 0,
+            text: 'Доставку осуществляем в 32 города Беларуси.'
+        },
+        {
+            id: 1,
+            text: 'Заказы, поступившие до 12:00 доставим в этот же день, после 12:00 - на следующий день.'
+        },
+        {
+            id: 2,
+            text: 'Стоимость доставки по Минску — 10 BYN, по Беларуси — 50 BYN.   При заказе товара на сумму,больше 600 BYN — доставка в любой город БЕСПЛАТНО.\n'
         },
     ]
 };
