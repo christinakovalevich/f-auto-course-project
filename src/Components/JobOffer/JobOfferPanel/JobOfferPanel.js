@@ -19,7 +19,7 @@ const JobOfferPanel = (props) => {
     ));
 
     return (
-        <div className="job-offer-panel panel panel-grey">
+        <div id="job-offer-panel" className="job-offer-panel panel panel-grey">
             <Container>
                 <Row>
                     <Col>

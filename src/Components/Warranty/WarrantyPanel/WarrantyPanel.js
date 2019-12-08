@@ -18,7 +18,7 @@ const WarrantyPanel = (props) => {
     ));
 
     return (
-        <div className="warranty-panel panel panel-white">
+        <div id="warranty-panel" className="warranty-panel panel panel-white">
             <Container>
                 <Row>
                     <Col>

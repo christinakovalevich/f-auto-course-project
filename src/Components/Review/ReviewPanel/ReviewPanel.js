@@ -33,7 +33,7 @@ const ReviewPanel = (props) => {
         </span>);
 
     return (
-        <div className="review-panel panel panel-grey">
+        <div id="review-panel" className="review-panel panel panel-grey">
             <Container>
                 <Row>
                     <Col>

@@ -5,7 +5,7 @@ import './App.css';
 import Header from "../Header";
 import SearchPanel from "../SearchPanel";
 import BenefitsPanel from "../Benefit/BenefitsPanel";
-import ReviewPanel from "../Review/ReviewsPanel";
+import ReviewPanel from "../Review/ReviewPanel";
 import WarrantyPanel from '../Warranty/WarrantyPanel'
 import JobOfferPanel from "../JobOffer/JobOfferPanel";
 import DeliveryPanel from "../DeliveryPanel";
@@ -111,9 +111,9 @@ const getNavLinkItems = () => {
     return [
         {id: 0, href: '#about-us', label: 'О Нас'},
         {id: 1, href: '/catalog', label: 'Каталог'},
-        {id: 2, href: '#customers-reviews', label: 'Отзывы'},
+        {id: 2, href: '#review-panel', label: 'Отзывы'},
         {id: 3, href: '#contacts', label: 'Контакты'},
-        {id: 4, href: '/signIn', label: 'Войти'},
+        {id: 4, href: '#job-offer-panel', label: 'Вакансии'},
     ];
 };
 
