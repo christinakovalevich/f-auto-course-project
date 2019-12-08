@@ -17,6 +17,7 @@ const SearchPanel = (props) => {
             >{it.label}</Form.Label>
             <Form.Control key={`select-${it.id}`}
                           id={it.id}
+                          className="shadow-on-hover"
                           as="select">
                 {
                     it.options.map(option => (

@@ -7,11 +7,11 @@ const Button = (props) => {
     const {label, onClick, href} = props;
 
     const element = (href && href !== '') ? (
-        <a className="button"
+        <a className="button shadow-on-hover"
            href={href}>{label}</a>
     ) : (
         <button
-            className="button"
+            className="button shadow-on-hover"
             onClick={onClick}>{label}
         </button>
     );

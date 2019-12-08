@@ -23,7 +23,6 @@ a.button {
 }
 
 .button:hover {
-    box-shadow: var(--box-shadow);
     color: var(--color-white);
     background-color: #3b00ff;
 }

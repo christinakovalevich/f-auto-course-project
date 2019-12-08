@@ -29,10 +29,6 @@ select {
     cursor: pointer;
 }
 
-select:hover {
-    box-shadow: var(--box-shadow);
-}
-
 select:focus {
     background-color: var(--color-white);
     border-color: rgba(55, 0, 212, 0.5) !important;
