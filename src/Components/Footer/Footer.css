@@ -1,3 +1,19 @@
 footer {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 4rem 0;
+}
 
+footer a {
+    color: inherit;
+}
+footer a:hover {
+    color: inherit;
+}
+
+footer .item-container {
+
+}
+footer .item-container .item {
+    margin: 2rem 0;
 }

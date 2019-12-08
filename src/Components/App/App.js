@@ -52,7 +52,7 @@ function App() {
         <div className="App">
             <Header
                 app={app}
-                logo={getHeaderLogo()}
+                logo={getAppLogo()}
                 title={getHeaderTitle()}
                 text={getHeaderText()}
                 navLinkItems={getNavLinkItems()}
@@ -86,7 +86,9 @@ function App() {
                 deliveryOptions={getDeliveryOptions()}
             />
 
-            <Footer/>
+            <Footer
+                logo={getAppLogo()}
+            />
 
         </div>
     );
@@ -100,7 +102,7 @@ const getHeaderText = () => {
     return 'Автозапчасти только от проверенных продавцов.'
 };
 
-const getHeaderLogo = () => {
+const getAppLogo = () => {
     return app.name.ru
 };
 
