@@ -31,6 +31,11 @@ const SearchPanel = (props) => {
         </Col>
     ));
 
+    const onClick = (e) => {
+        e.preventDefault();
+        window.open('https://f-avto.by/', '_blank')
+    };
+
     return (
         <div className="search-panel panel panel-grey" id="search-panel">
             <Container>
@@ -52,10 +57,7 @@ const SearchPanel = (props) => {
                                 <Form.Label style={{'visibility': 'hidden'}}>_</Form.Label>
                                 <Button
                                     label="Найти"
-                                    onClick={e => {
-                                        e.preventDefault();
-                                        window.open('https://f-avto.by/', '_blank')}
-                                    }
+                                    onClick={e => onClick(e)}
                                 />
                             </Col>
                         </Form.Group>
