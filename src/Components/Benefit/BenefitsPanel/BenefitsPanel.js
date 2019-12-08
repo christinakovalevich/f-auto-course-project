@@ -19,7 +19,7 @@ const BenefitsPanel = (props) => {
     ));
 
     return (
-        <div className="benefits-panel">
+        <div className="benefits-panel panel panel-white">
             <Container>
 
                 <Row>

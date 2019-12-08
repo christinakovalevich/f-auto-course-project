@@ -31,7 +31,7 @@ const SearchPanel = (props) => {
     ));
 
     return (
-        <div className="search-panel" id="search-panel">
+        <div className="search-panel panel panel-grey" id="search-panel">
             <Container>
                 <Row>
                     <Col>

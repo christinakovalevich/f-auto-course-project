@@ -18,6 +18,7 @@ import benefitItemImg1 from './assets/BenefitsPanel/items/benefit-item-1.svg';
 import benefitItemImg2 from './assets/BenefitsPanel/items/benefit-item-2.svg';
 import benefitItemImg3 from './assets/BenefitsPanel/items/benefit-item-3.svg';
 import benefitItemImg4 from './assets/BenefitsPanel/items/benefit-item-4.svg';
+import JobOfferPanel from "../JobOffer/JobOfferPanel";
 // import userAvatar5 from "./assets/ReviewsPanel/Avatars/user-avatar-5.svg";
 // import userAvatar6 from "./assets/ReviewsPanel/Avatars/user-avatar-6.svg";
 // import userAvatar7 from "./assets/ReviewsPanel/Avatars/user-avatar-7.svg";
@@ -69,6 +70,10 @@ function App() {
             <WarrantyPanel
                 title="Гарантия и сертификаты качества"
                 warrantyPanelItems={getWarrantyItems()}
+            />
+
+            <JobOfferPanel
+
             />
             <Footer/>
 
