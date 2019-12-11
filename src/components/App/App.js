@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import './App.css';
 
@@ -11,6 +11,8 @@ import JobOfferPanel from "../JobOffer/JobOfferPanel";
 import DeliveryPanel from "../DeliveryPanel";
 import Footer from "../Footer";
 
+import SearchPanelService from "../../services/SearchPanel";
+
 import userAvatar0 from "./assets/ReviewsPanel/Avatars/user-avatar-0 1.png";
 import userAvatar1 from "./assets/ReviewsPanel/Avatars/user-avatar-1 1.png";
 import userAvatar2 from "./assets/ReviewsPanel/Avatars/user-avatar-2 1.png";
@@ -21,12 +23,12 @@ import userAvatar6 from "./assets/ReviewsPanel/Avatars/user-avatar-6 1.png";
 import userAvatar7 from "./assets/ReviewsPanel/Avatars/user-avatar-7 1.png";
 import userAvatar8 from "./assets/ReviewsPanel/Avatars/user-avatar-8 1.png";
 import userAvatar9 from "./assets/ReviewsPanel/Avatars/user-avatar-9 1.png";
+import mapImg from './assets/DeliveryPanel/map.png'
 
 import benefitItemImg1 from './assets/BenefitsPanel/items/benefit-item-1.svg';
 import benefitItemImg2 from './assets/BenefitsPanel/items/benefit-item-2.svg';
 import benefitItemImg3 from './assets/BenefitsPanel/items/benefit-item-3.svg';
 import benefitItemImg4 from './assets/BenefitsPanel/items/benefit-item-4.svg';
-import mapImg from './assets/DeliveryPanel/map.png'
 
 const avatars = [
     userAvatar0,
@@ -48,51 +50,92 @@ const app = {
     },
 };
 
-function App() {
-    return (
-        <div className="App">
-            <Header
-                app={app}
-                logo={getAppLogo()}
-                title={getHeaderTitle()}
-                text={getHeaderText()}
-                navLinkItems={getNavLinkItems()}
-            />
-            <SearchPanel
-                title={getSearchPanelTitle()}
-                searchPanelFormItems={getSearchPanelFormItems()}
-            />
-            <BenefitsPanel
-                title={getBenefitsPanelTitle()}
-                benefitsPanelItems={getBenefitsPanelItems()}
-            />
-            <ReviewPanel
-                usersReviews={getUsersReviews()}
-            />
+class App extends Component {
 
-            <WarrantyPanel
-                title="Гарантия и сертификаты качества"
-                warrantyPanelItems={getWarrantyItems()}
-            />
+    constructor(props) {
+        super(props);
 
-            <JobOfferPanel
-                title={getJobOfferPanelTitle()}
-                jobOfferItems={getJobOfferItems()}
-            />
+        this.searchPanelService = new SearchPanelService();
 
-            <DeliveryPanel
-                title={getDeliveryPanelTitle()}
-                mapImg={mapImg}
-                selfDeliveryOptions={getSelfDeliveryOptions()}
-                deliveryOptions={getDeliveryOptions()}
-            />
+        this.state = {
+            searchPanelProps: {
+                title: '',
+                formItems: null,
+                loaded: false
+            }
+        }
+    }
 
-            <Footer
-                logo={getAppLogo()}
-            />
+    componentDidMount() {
+        this.setState({
+            searchPanelProps : this.getSearchPanelProps()
+        })
+    }
 
-        </div>
-    );
+    getSearchPanelProps() {
+        return {
+            title: this.searchPanelService.getSearchPanelTitle(),
+            formItems: this.searchPanelService.fetchSearchPanelFormItems(),
+            loaded: true
+        }
+    }
+
+    render() {
+        const {searchPanelProps} = this.state;
+
+        let searchPanel = null;
+
+        if (searchPanelProps.loaded) {
+            searchPanel = (
+                <SearchPanel
+                    title={searchPanelProps.title}
+                    searchPanelFormItems={searchPanelProps.formItems}
+                />
+            )
+        }
+
+        return (
+            <div className="App">
+                <Header
+                    app={app}
+                    logo={getAppLogo()}
+                    title={getHeaderTitle()}
+                    text={getHeaderText()}
+                    navLinkItems={getNavLinkItems()}
+                />
+                {searchPanel}
+                <BenefitsPanel
+                    title={getBenefitsPanelTitle()}
+                    benefitsPanelItems={getBenefitsPanelItems()}
+                />
+                <ReviewPanel
+                    usersReviews={getUsersReviews()}
+                />
+
+                <WarrantyPanel
+                    title="Гарантия и сертификаты качества"
+                    warrantyPanelItems={getWarrantyItems()}
+                />
+
+                <JobOfferPanel
+                    title={getJobOfferPanelTitle()}
+                    jobOfferItems={getJobOfferItems()}
+                />
+
+                <DeliveryPanel
+                    title={getDeliveryPanelTitle()}
+                    mapImg={mapImg}
+                    selfDeliveryOptions={getSelfDeliveryOptions()}
+                    deliveryOptions={getDeliveryOptions()}
+                />
+
+                <Footer
+                    logo={getAppLogo()}
+                />
+
+            </div>
+        );
+    }
 }
 
 const getHeaderTitle = () => {
@@ -115,90 +158,6 @@ const getNavLinkItems = () => {
         {id: 3, href: '#contacts', label: 'Контакты'},
         {id: 4, href: '#job-offer-panel', label: 'Вакансии'},
     ];
-};
-
-const getSearchPanelTitle = () => {
-    return 'Быстрый поиск детали'
-};
-
-const getSearchPanelFormItems = () => {
-    return [
-        {
-            id: 'brand', label: 'Марка авто', options: getBrands()
-        },
-        {
-            id: 'type', label: 'Тип кузова', options: getCorpusTypes()
-        },
-        {
-            id: 'year', label: 'Год выпуска', options: getYears(1990)
-        },
-        {
-            id: 'detail', label: 'Запчасть', options: getDetails()
-        },
-    ];
-};
-
-const getDetails = () => {
-    return [
-        {id: 0, label: 'Двигатель', value: 'Двигатель'},
-        {id: 1, label: 'Оптика и свет', value: 'Оптика и свет'},
-        {id: 2, label: 'Системы охлаждения', value: 'Системы охлаждения'},
-        {id: 3, label: 'Подвеска', value: 'Подвеска'},
-        {id: 4, label: 'Топливная система', value: 'Топливная система'},
-    ]
-};
-
-const getYears = (yearFrom = 1980) => {
-    const currentYear = new Date().getFullYear();
-
-    const years = [];
-
-    let j = 0;
-
-    for (let i = yearFrom; i < currentYear; i++) {
-        years.push({id: j++, label: i, value: i})
-    }
-
-    return years
-};
-
-const getCorpusTypes = () => {
-    return [
-        {id: 0, label: 'Купе', value: 'Купе'},
-        {id: 1, label: 'Хетчбек', value: 'Хетчбек'},
-        {id: 2, label: 'Седан', value: 'Седан'},
-        {id: 3, label: 'Универсал', value: 'Универсал'},
-        {id: 4, label: 'Минивен', value: 'Минивен'},
-        {id: 5, label: 'Кроссовер', value: 'Кроссовер'},
-        {id: 6, label: 'Внедорожник', value: 'Внедорожник'},
-        {id: 7, label: 'Микроавтобус', value: 'Микроавтобус'},
-    ]
-};
-
-const getBrands = () => {
-    return [
-        {id: 0, label: 'Mercedes', value: 'Mercedes'},
-        {id: 1, label: 'Audi', value: 'Audi'},
-        {id: 2, label: 'BMW', value: 'BMW'},
-        {id: 3, label: 'Volkswagen', value: 'Volkswagen'},
-        {id: 4, label: 'Mitsubishi', value: 'Mitsubishi'},
-        {id: 5, label: 'Ford', value: 'Ford'},
-        {id: 6, label: 'Toyota', value: 'Toyota'},
-        {id: 7, label: 'Geely', value: 'Geely'},
-        {id: 8, label: 'Mini', value: 'Mini'},
-        {id: 9, label: 'Opel', value: 'Opel'},
-    ].sort((a, b) => {
-            if (a.label > b.label) {
-                return 1
-            }
-
-            if (a.label < b.label) {
-                return -1
-            }
-
-            return 0
-        }
-    )
 };
 
 const getBenefitsPanelTitle = () => {
