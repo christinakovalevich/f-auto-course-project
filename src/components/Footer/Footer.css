@@ -17,3 +17,16 @@ footer .item-container {
 footer .item-container .item {
     margin: 2rem 0;
 }
+
+footer .item-container .item .social-icons {
+    margin-top: 1rem;
+}
+
+footer .item-container .item .social-icons .icon {
+    display: inline-block;
+    margin-right: .875rem;
+}
+
+footer .item-container .item .social-icons .icon img {
+    max-width: 2.5rem;
+}

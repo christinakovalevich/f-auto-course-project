@@ -18,7 +18,7 @@ const ReviewItem = (props) => {
             <div className="review-body">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col sm={12} md={8} lg={6}>
+                        <Col sm={12} md={8} lg={8}>
                             <div className="text">
                                 {review.text}
                             </div>

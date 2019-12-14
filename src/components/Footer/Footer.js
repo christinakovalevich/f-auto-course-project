@@ -2,6 +2,11 @@ import React from "react";
 import './Footer.css'
 import {Col, Container, Row} from "react-bootstrap";
 
+import instagramLogo from './assets/SocialIcons/Instagram/white.svg'
+import vkLogo from './assets/SocialIcons/VK/white.svg'
+import telegramLogo from './assets/SocialIcons/Telegram/white.svg'
+import viberLogo from './assets/SocialIcons/Viber/white.svg'
+
 const Footer = (props) => {
     const {logo = 'LOGO'} = props;
     return (
@@ -29,7 +34,29 @@ const Footer = (props) => {
 
                             <div className="item">
                                 Мы в соц.сетях
-                                <br/>
+                                <div className="social-icons">
+                                    <div className="icon shadow-on-hover">
+                                        <a href="https://www.instagram.com/favto_avtorazbor/" target="_blank" rel="noopener noreferrer">
+                                            <img src={instagramLogo} alt=""/>
+                                        </a>
+                                    </div>
+                                    <div className="icon shadow-on-hover">
+                                        <a href="https://vk.com/favtoby" target="_blank" rel="noopener noreferrer">
+                                            <img src={vkLogo} alt=""/>
+                                        </a>
+                                    </div>
+                                    <div className="icon shadow-on-hover">
+                                        <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer">
+                                            <img src={telegramLogo} alt=""/>
+                                        </a>
+                                    </div>
+                                    <div className="icon shadow-on-hover">
+                                        <a href="https://www.viber.com/ru/" target="_blank" rel="noopener noreferrer">
+                                            <img src={viberLogo} alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
