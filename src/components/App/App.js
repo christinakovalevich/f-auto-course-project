@@ -83,7 +83,7 @@ class App extends Component {
     render() {
         const {searchPanelProps} = this.state;
 
-        let searchPanel = null;
+        let searchPanel = (<div>Loading..</div>);
 
         if (searchPanelProps.loaded) {
             searchPanel = (
