@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a19f2c233fa9dec40ccd3d1bda5a3c4d",
+    "revision": "4b9838f9c4770d0c26ba264b411eb979",
     "url": "/f-auto-course-project/index.html"
   },
   {
-    "revision": "2924e5d72da9d37de5ee",
+    "revision": "9771663505354c705838",
     "url": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "63a84f52d5d8ea4f923f",
+    "revision": "64029b3598497312045d",
     "url": "/f-auto-course-project/static/css/main.dcefc0fa.chunk.css"
   },
   {
-    "revision": "2924e5d72da9d37de5ee",
-    "url": "/f-auto-course-project/static/js/2.573b2881.chunk.js"
+    "revision": "9771663505354c705838",
+    "url": "/f-auto-course-project/static/js/2.9b4771b8.chunk.js"
   },
   {
-    "revision": "63a84f52d5d8ea4f923f",
-    "url": "/f-auto-course-project/static/js/main.b73e39aa.chunk.js"
+    "revision": "64029b3598497312045d",
+    "url": "/f-auto-course-project/static/js/main.bca6b478.chunk.js"
   },
   {
     "revision": "855441f2e542762e41c1",
