@@ -69,3 +69,18 @@ select:focus {
     color: var(--color-blue);
 }
 
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.text-color-blue {
+    color: var(--color-blue) !important;
+}
+
+.text-color-grey {
+    color: var(--color-dark-grey) !important;
+}
+
+.text-color-black {
+    color: var(--color-black) !important;
+}

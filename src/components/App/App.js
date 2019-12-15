@@ -5,6 +5,7 @@ import './App.css';
 import Header from "../Header";
 import SearchPanel from "../SearchPanel";
 import BenefitsPanel from "../Benefit/BenefitsPanel";
+import DiscountPanel from "../DiscountPanel";
 import ReviewPanel from "../Review/ReviewPanel";
 import WarrantyPanel from '../Warranty/WarrantyPanel'
 import JobOfferPanel from "../JobOffer/JobOfferPanel";
@@ -12,6 +13,8 @@ import DeliveryPanel from "../DeliveryPanel";
 import Footer from "../Footer";
 
 import SearchPanelService from "../../services/SearchPanel";
+
+import deliveryImg from "./assets/DiscountPanel/deliveryImg.png"
 
 import userAvatar0 from "./assets/ReviewsPanel/Avatars/user-avatar-0 1.png";
 import userAvatar1 from "./assets/ReviewsPanel/Avatars/user-avatar-1 1.png";
@@ -103,11 +106,14 @@ class App extends Component {
                     text={getHeaderText()}
                     navLinkItems={getNavLinkItems()}
                 />
+
                 {searchPanel}
+
                 <BenefitsPanel
                     title={getBenefitsPanelTitle()}
                     benefitsPanelItems={getBenefitsPanelItems()}
                 />
+
                 <ReviewPanel
                     usersReviews={getUsersReviews()}
                 />
@@ -120,6 +126,12 @@ class App extends Component {
                 <JobOfferPanel
                     title={getJobOfferPanelTitle()}
                     jobOfferItems={getJobOfferItems()}
+                />
+
+                <DiscountPanel
+                    title={getDiscountPanelTitle()}
+                    text={getDiscountPanelText()}
+                    img={getDiscountPanelImg()}
                 />
 
                 <DeliveryPanel
@@ -191,6 +203,18 @@ const getBenefitsPanelItems = () => {
             img: benefitItemImg4
         },
     ];
+};
+
+const getDiscountPanelTitle = () => {
+    return 'Акции и предложения'
+};
+
+const getDiscountPanelText = () => {
+    return 'При сумме заказа от 100 рублей доставка осуществляется бесплатно'
+};
+
+const getDiscountPanelImg = () => {
+    return deliveryImg
 };
 
 const getUsersReviews = () => {

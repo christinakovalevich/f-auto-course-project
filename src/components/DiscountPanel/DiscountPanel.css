@@ -1,0 +1,26 @@
+.discount-panel {
+
+}
+
+.discount-panel .title-container {
+    color: var(--color-black);
+    margin-bottom: 2rem;
+}
+
+.discount-panel .decorated-text {
+    display: inline-block;
+    padding: 20% 0;
+}
+
+.discount-panel .decorated-text span {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.discount-panel .img-container {
+    text-align: center;
+}
+
+.discount-panel .img-container img {
+    max-width: 35vw;
+}
