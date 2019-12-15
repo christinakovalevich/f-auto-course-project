@@ -23,7 +23,9 @@ const DiscountPanel = (props) => {
                             *Акция действует при условии доставки товара в пределах Границы Доставки.
                         </div>
                     </Col>
-                    <Col sm={12} md={true} lg={true}>
+                    <Col sm={false} md={1} lg={1}>
+                    </Col>
+                    <Col sm={false} md={true} lg={true}>
                         <div className="img-container">
                             <img src={img} alt=""/>
                         </div>
@@ -37,14 +39,14 @@ const DiscountPanel = (props) => {
 const decorateText = (text = '') => {
     const simpleWords = text.split(' ');
 
-    const decoratedText = simpleWords.map(word => {
+    const decoratedText = simpleWords.map((word, i) => {
         if (word.toLocaleLowerCase() === 'бесплатно') {
             return (
-                <span className="font-weight-medium text-color-blue">{word}</span>
+                <span key={i} className="font-weight-medium text-color-blue">{word}</span>
             )
         } else if (word.toLocaleLowerCase() === 'доставка' || !isNaN(word)) {
             return (
-                <span className="font-weight-medium text-color-black">{word} </span>
+                <span key={i} className="font-weight-medium text-color-black">{word} </span>
             )
         } else {
             return word + ' '
