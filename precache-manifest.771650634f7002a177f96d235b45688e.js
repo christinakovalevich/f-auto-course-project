@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06596c2f70627daafd9008f11b63621a",
+    "revision": "72e73164da2b88c6faf41e3411ae2340",
     "url": "/f-auto-course-project/index.html"
   },
   {
-    "revision": "5e56f1f6180bd8c7f924",
-    "url": "/f-auto-course-project/static/css/2.17e5ed98.chunk.css"
+    "revision": "4161c6628df92a8a56e1",
+    "url": "/f-auto-course-project/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "f49a7ac5c6a66795e723",
-    "url": "/f-auto-course-project/static/css/main.5638a6bb.chunk.css"
+    "revision": "aba4b781d22e9c88be33",
+    "url": "/f-auto-course-project/static/css/main.8a6dff5c.chunk.css"
   },
   {
-    "revision": "5e56f1f6180bd8c7f924",
-    "url": "/f-auto-course-project/static/js/2.f661bb52.chunk.js"
+    "revision": "4161c6628df92a8a56e1",
+    "url": "/f-auto-course-project/static/js/2.72e9428d.chunk.js"
   },
   {
-    "revision": "f49a7ac5c6a66795e723",
-    "url": "/f-auto-course-project/static/js/main.a584ff5a.chunk.js"
+    "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
+    "url": "/f-auto-course-project/static/js/2.72e9428d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "855441f2e542762e41c1",
-    "url": "/f-auto-course-project/static/js/runtime-main.c372d692.js"
+    "revision": "aba4b781d22e9c88be33",
+    "url": "/f-auto-course-project/static/js/main.66dc8e1d.chunk.js"
+  },
+  {
+    "revision": "80be72201b5b9010de8b",
+    "url": "/f-auto-course-project/static/js/runtime-main.955b6a0c.js"
   },
   {
     "revision": "4550a0a4da585ab6d520d9beeaa1b95a",
